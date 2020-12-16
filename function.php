@@ -1,11 +1,13 @@
 <?php
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
 $header[] = "Host: api.gojekapi.com";
-$header[] = "User-Agent: okhttp/3.10.0";
+$header[] = "User-Agent: okhttp/3.12.1";
+//$header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
 $header[] = "Content-Type: application/json; charset=UTF-8";
-$header[] = "X-AppVersion: 3.40.2";
+$header[] = "X-AppVersion: 3.50.1";
+//$header[] = "X-AppVersion: 3.40.2";
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
